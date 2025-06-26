@@ -44,7 +44,7 @@ The server (running **IIS**) allowed me to directly download a compressed versio
 
 ![Web server allows download](4-server-allows-to-download-compressed-publish-folder.png)
 
-Using Burp Suite, I downloaded the entire compressed `publish` folder.
+Using IDM, I downloaded the entire compressed `publish` folder.
 
 ![Downloading compressed folder](5-downloading-compressed-publish-folder.png)
 
@@ -52,6 +52,7 @@ Using Burp Suite, I downloaded the entire compressed `publish` folder.
 
 ## 🧩 Extracting Hidden Files
 
+I used winrar to extract compressed folder
 Once extracted, the archive contained even **more files** than were visible through the browser, including debugging symbols and sensitive configs.
 
 ![Extracted content](6-publish-folder-rar-contents.png)
